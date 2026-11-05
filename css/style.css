@@ -8,21 +8,32 @@
 @media print{body{background:#fff}.sidebar,.topbar,.footer,.page-intro,.print-button{display:none!important}.main{margin:0;padding:0;max-width:none}.resume-sheet,.bio-sheet{box-shadow:none;border:0;padding:10mm}.bio-sheet{padding:0}.resume-columns{gap:25px}.bio-content{padding:8mm 10mm}.resume-section{break-inside:avoid}.layout{display:block}@page{margin:12mm}}
 /* Profile photo styling */
 .hero-visual {
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
+    z-index: 2;
+}
+
+.hero-visual .ring,
+.hero-visual .hero-letter,
+.hero-visual .visual-note {
+    display: none;
 }
 
 .profile-photo {
-    width: 300px;
-    height: 380px;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center 20%;
-    border-radius: 18px;
-    position: relative;
-    z-index: 5;
-    border: 4px solid #ffffff;
+    border-radius: 16px;
+    border: 4px solid white;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
