@@ -16,13 +16,13 @@
 }
 
 .profile-photo {
-    width: 280px;
-    height: 340px;
+    width: 300px;
+    height: 380px;
     object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
+    object-position: center 20%;
+    border-radius: 18px;
     position: relative;
-    z-index: 2;
-    border: 5px solid #ffffff;
+    z-index: 5;
+    border: 4px solid #ffffff;
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
