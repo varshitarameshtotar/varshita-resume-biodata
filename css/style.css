@@ -6,3 +6,23 @@
 @media(max-width:900px){.sidebar{width:205px;padding:25px 17px}.main{margin-left:205px;padding:28px 4%}.hero{padding:35px}.hero-visual{right:3%;opacity:.65}.resume-sheet{padding:27px}.resume-columns{gap:22px}}
 @media(max-width:680px){.sidebar{position:relative;width:auto;height:auto;padding:13px 17px;display:block;border-right:0;border-bottom:1px solid var(--line)}.brand{display:inline-flex}.nav-caption,.sidebar-bottom{display:none}.sidebar nav{display:flex;gap:5px;margin-top:13px}.nav-link{height:36px;padding:0 10px;font-size:10px;gap:6px}.main{margin:0;padding:23px 17px}.topbar h1{font-size:25px}.contact-top{font-size:9px;padding:9px}.hero{min-height:300px;padding:28px 24px}.hero h2{font-size:48px}.hero-visual{right:-65px;opacity:.28}.hero-description{max-width:340px}.hero-index{display:none}.stats{grid-template-columns:1fr}.stat-card{padding:15px 17px}.stat-card h3{margin-top:12px}.lower-grid{grid-template-columns:1fr}.subtle{display:none}.page-intro h2{font-size:36px}.resume-sheet{padding:22px 18px}.resume-header{display:block}.resume-contact{text-align:left;margin-top:17px}.resume-columns{grid-template-columns:1fr;gap:0}.declaration{align-items:start;flex-direction:column;gap:0}.bio-banner{padding:22px 19px}.bio-content{padding:8px 19px 20px}.bio-grid{grid-template-columns:1fr 1fr;gap:15px}.table-row{grid-template-columns:1fr 1.3fr .5fr;font-size:8px;padding:9px 7px;gap:6px}.footer{font-size:8px}}
 @media print{body{background:#fff}.sidebar,.topbar,.footer,.page-intro,.print-button{display:none!important}.main{margin:0;padding:0;max-width:none}.resume-sheet,.bio-sheet{box-shadow:none;border:0;padding:10mm}.bio-sheet{padding:0}.resume-columns{gap:25px}.bio-content{padding:8mm 10mm}.resume-section{break-inside:avoid}.layout{display:block}@page{margin:12mm}}
+/* Profile photo styling */
+.hero-visual {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    border: 5px solid #ffffff;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
